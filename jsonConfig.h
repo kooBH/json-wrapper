@@ -145,12 +145,14 @@ namespace jsonConfig {
         exit(JSON_ERROR);
       }
 
+      /*
       printf("type %s %s %d\n", it.key().c_str(), it.value().type_name(), it.value().type());
       if (static_cast<int>(it.value().type()) == 1) {
         for (json::iterator it2 = it.value().begin(); it2 != it.value().end(); it2++) {
           printf("--type %s %s %d\n", it2.key().c_str(), it2.value().type_name(), it2.value().type());
         }
       }
+      */
     }
     ifs.close();
   }
