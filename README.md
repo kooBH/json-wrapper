@@ -8,7 +8,7 @@ This class get only number(bool,int,double) as double. Cast to other type when u
 ## Available shape of json
 ```json
 
-/*{
+{
      "category1":{
          "param1":1.3,
          "param3": -5,
@@ -32,5 +32,5 @@ This class get only number(bool,int,double) as double. Cast to other type when u
          }
     }
   }
-*/
+
 ```
