@@ -5,12 +5,20 @@
 
 int main() {
 
- const std::string json_path = "../config.json";
+   const std::string json_path = "../config.json";
+   jsonConfig data1(json_path.c_str(), "input");
+   data1.Print();
+   jsonConfig data2(json_path.c_str(), "param");
+   data2.Print();
+   
+   printf("==============\n");
 
- jsonConfig data1(json_path.c_str(), "input");
- data1.Print();
- jsonConfig data2(json_path.c_str(), "param");
- data2.Print();
+   printf("input.device : %lf\n",data1["device"]);
+   printf("int(input.device) : %d\n",int(data1["device"]));
+
+
+
+
 
   return 0;
 }

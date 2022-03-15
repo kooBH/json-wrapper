@@ -1,6 +1,6 @@
 # CMAKE version of Ubuntu 16.04 is 3.5.
 cmake_minimum_required(VERSION 3.5)
-project(test)
+project(test_jsonConfig)
 
 set(SRC)
 set(INCL)
@@ -10,7 +10,6 @@ set(COMPILE_OPTION)
 list(APPEND SRC
 	test.cpp
 	json.hpp
-	Config.h
 	jsonConfig.h
   )
 list(APPEND INCL
