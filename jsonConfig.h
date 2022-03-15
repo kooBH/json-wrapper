@@ -59,6 +59,7 @@ protected:
   json j;
 public:
   inline jsonConfig(string file_path, string category);
+  inline jsonConfig(const char* file_path, const char* category);
   inline ~jsonConfig();
 
   inline void Load();
@@ -76,6 +77,15 @@ inline jsonConfig::jsonConfig(string file_path_, string category_) {
   category = category_;
   Load();
 }
+
+inline jsonConfig::jsonConfig(const char* file_path_, const char*category_) {
+  is_open = false;
+  file_path = std::string(file_path_);
+  category = std::string(category_);
+  Load();
+}
+
+
 inline jsonConfig::~jsonConfig() {
 
 }
