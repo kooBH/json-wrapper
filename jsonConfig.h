@@ -173,6 +173,7 @@ double& jsonConfig::operator[](string key) {
 }
 
 inline void jsonConfig::Print() {
+  std::cout << "========== " << category << " ==========" << std::endl;
   for (auto const& it : data)
     std::cout << it.first << " : " << it.second << "\n";
 }
